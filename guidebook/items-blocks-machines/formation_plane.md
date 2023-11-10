@@ -30,12 +30,16 @@ and can replace storage busses in those setups if you want to drop items/place b
 
 They are [cable subparts](../ae2-mechanics/cable-subparts.md).
 
+**REMEMBER TO ENABLE FAKE PLAYERS IN YOUR CHUNK CLAIM**
+
 ## Filtering
 
 By default the plane will place/drop anything. Items inserted into its filter slots will act as a whitelist, only
 allowing those specific items to be placed.
 
-Items can be dragged into the slots from JEI/REI even if you don't actually have any of that item.
+Items and fluids can be dragged into the slots from JEI/REI even if you don't actually have any of that item.
+
+Right-click with a fluid container (like a bucket or fluid tank) to set that fluid as a filter instead of the bucket or tank item.
 
 ## Priority
 

@@ -68,7 +68,8 @@ mouse/key shortcuts:
 
 *   Left-click grabs a stack, right-click grabs half a stack.
 *   If an item or fluid or etc. is able to be [autocrafted](../ae2-mechanics/autocrafting.md),
-    whatever you have bound to "pick block" (usually middle-click) brings up a UI to specify the amount to be crafted.
+    whatever you have bound to "pick block" (usually middle-click) brings up a UI to specify the amount to be crafted. You can also input formulas like `3*64/2`,
+    or type `=32` to only craft the number of items needed to reach 32 in your storage.
 *   Holding shift will freeze the displayed items in-place, stopping them from re-organizing themselves when quantities change or new items enter the system.
 *   Right-clicking with a bucket or other fluid container will deposit the fluid, left-clicking a fluid in the terminal with
     an empty fluid container will withdraw the fluid.
@@ -152,20 +153,21 @@ A slot for encoded patterns. Place a pattern that has already been encoded in th
 The central UI changes depending on the type of pattern to be encoded:
 
 *   In crafting mode:
-    *   left-click in or drag from JEI/REI the ingredients to form the recipe. Right-click to remove the ingredient.
+    *   Left-click in or drag from JEI/REI the ingredients to form the recipe. Right-click to remove the ingredient.
     *   Enabling substitiutions allows things like crafting sticks from any plank type. This should only be used
         when absolutely necessary.
     *   Fluid substitutions allows using stored fluids in place of buckets of fluids.
     *   You can also directly encode a pattern from the JEI/REI recipe screen.
 
 *   In processing mode:
-    *   left-click or right-click in or drag from JEI/REI the ingredients to specify the inputs and outputs of the recipe.
-    *   When holding a stack, left-click places the whole stack, right-click places one item. Left-click on an existing ingredient stack to
+    * Left-click or right-click in or drag from JEI/REI the ingredients to specify the inputs and outputs of the recipe.
+    * Right-click with a fluid container (like a bucket or fluid tank) to set that fluid as an ingredient instead of the bucket or tank item.
+    * When holding a stack, left-click places the whole stack, right-click places one item. Left-click on an existing ingredient stack to
         remove the whole stack and right-click to decrement the stack by 1. Whatever you have bound to "pick block" (usually middle-click)
         lets you specify a precise amount of the item or fluid.
-    *   The output slots have a primary output and space for any secondary outputs you might want the autocrafting algorithm to know about.
-    *   Both input and output slots scroll, so you can have 81 different ingredients and 26 secondary outputs
-    *   You can also directly encode a pattern from the JEI/REI recipe screen.
+    * The output slots have a primary output and space for any secondary outputs you might want the autocrafting algorithm to know about.
+    * Both input and output slots scroll, so you can have 81 different ingredients and 26 secondary outputs
+    * You can also directly encode a pattern from the JEI/REI recipe screen.
 
 *   The smithing and stonecutting mode UIs work similarly to a smithing table and stonecutter respectively.
 
@@ -192,6 +194,8 @@ allows access to all pattern providers on the network.
 This terminal has a different UI to all the other terminals.
 
 It has settings for terminal height and which pattern providers to show.
+
+Each row in the terminal corresponds to a specific pattern provider.
 
 Pattern providers in the terminal are sorted by what blocks they are connected to, or what name you have given them (in an anvil or
 with a <ItemLink id="name_press" />).
